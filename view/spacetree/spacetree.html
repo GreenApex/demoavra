@@ -1,0 +1,110 @@
+
+iv id="container">
+    <script>
+        var plus14days = new Date();
+        plus14days.setDate(plus14days.getDate() - 7);
+        $(".datepicker").datepicker("setDate", plus14days);
+        $(".datepicker").datepicker('update');
+    </script>
+
+    <script>
+        var i = new Date();
+        i.setDate(i.getDate() + 0);
+        $(".datepicker1").datepicker("setDate", i);
+        $(".datepicker1").datepicker('update');
+
+    </script>
+
+
+    <div id="center-container">
+        <div id="infovis"></div>
+    </div>
+    <div id="right-container">
+        <h4>Tree Orientation</h4>
+        <table class="table table-striped">
+            <tr>
+                <td>
+                    <label for="r-left">Left </label>
+                </td>
+                <td>
+                    <input type="radio" id="r-left" name="orientation" checked="checked" value="left"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="r-top">Top </label>
+                </td>
+                <td>
+                    <input type="radio" id="r-top" name="orientation" value="top"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Start Date </label>
+                </td>
+
+                <td>
+                    <input class="datepicker" data-date-format="mm/dd/yyyy">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label>End Date </label>
+                </td>
+                <td>
+                    <input class="datepicker datepicker1" data-date-format="mm/dd/yyyy">
+                </td>
+
+            </tr>
+
+        </table>
+        <h4>Key Performance Indicators </h4>
+        <table class="table table-striped ">
+            <tr>
+                <td>
+                    <label style="font-size: 12px">SAP Activity Level </label>
+                </td>
+                <td>
+                    <select>
+                        <option>Very high</option>
+                        <option>High</option>
+                        <option> Medium</option>
+                        <option>Low</option>
+                        <option>None</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="font-size: 12px">Defect Resolution </label>
+                </td>
+                <td>
+                    <input type="text" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="font-size: 12px">Attendance </label>
+                </td>
+                <td>
+                    <input type="text" class="form-control">
+                </td>
+            </tr>
+            <td>
+                <a class="btn btn-primary btn-block col-md-offset-6" href="">Recalculate</a>
+            </td>
+        </table>
+    </div>
+    <div id="left-container">
+        <img src="assets/images/logo.png" class="img-thumbnail logo" alt="noimg" />
+
+        <h4 class="large_text">Welcome Back Charlie!</h4>
+        <br>
+
+        <h4 class="latest_news"><a href="" class="text-center" style="font-size: 20px"> Help Links</a></h4>
+        <h5 class="latest_news1"><a href="http://avraquality.com/offshorereview.php">How to change the Date Range from the default 7 days</a></h5>
+        <h5 class="latest_news1"><a href="http://www.avraquality.com/sapintegration.php">How to rank all resources</a></h5>      
+    </div>
+
+
