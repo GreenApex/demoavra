@@ -1,36 +1,23 @@
 'use strict';
 
-deskControllers.controller('homeController', ['$scope', '$window',
-    function ($scope, $window) {
+deskControllers.controller('homeController', ['$scope', '$window', 'login', '$cookies',
+    function ($scope, $window, login, $cookies) {
 
         $("#loader").fadeOut();
 
-        $scope.heading = "Landing Page...";
+       $scope.loginFunction = function(){
+            $("#loader").fadeIn();
+           login.save(
+               {
+                   USER_NAME : $scope.userName,
+                   USER_COMPANY_NAME : $scope.companyName,
+                   USER_PASS : $scope.password
 
-        //$("#show").click(function(){
-        //    $(".show1").slideDown()
-        //
-        //});
-        //
-        //
-        //
-        //
-        //$(document).click(function (e) {
-        //    if (!$(e.target).hasClass("btn")
-        //        && $(e.target).parents(".show1").length === 0)
-        //    {
-        //        $(".show1").hide();
-        //    }
-        //});
-        //
-        //$("#scrollTop").click(function() {
-        //    $('html, body').animate({
-        //        scrollTop: $(".second_section").offset().top
-        //    }, 2000);
-        //});
-        //
-
-
-
-
+               }, function (response){
+                   alert(JSON.stringify(response));
+                   $cookies.putObject('userData',response.data);
+                   $.toaster("Login Successfully", 'Congratulation', 'success');
+                   $window.location.href = "#/spacetree"
+           });
+       };
     }]);

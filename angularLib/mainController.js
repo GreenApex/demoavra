@@ -4,9 +4,9 @@ angular.element(document).ready(function () {
     angular.bootstrap(document, ['myApp']);
 });
 //module for myApp decide route/controller/service/directive
-var deskApp = angular.module('myApp', ['ngRoute', 'myControllers', 'myServices', 'dndLists']);
+var deskApp = angular.module('myApp', ['ngRoute', 'myControllers', 'myServices', 'dndLists', 'ngCookies',]);
 
-deskApp.constant('webAppConstant', 'http://54.172.65.114:8080/PrjMRI/filter/');
+deskApp.constant('webAppConstant', 'http://api.demoavra.eu/');
 
 deskApp.config(['$routeProvider',
         function ($routeProvider) {
@@ -40,9 +40,24 @@ deskApp.config(['$routeProvider',
             });
             //$locationProvider.html5Mode(true); //For Remove #
         }])
-    .run(function ($rootScope, $location) {
+    .run(function ($rootScope, $location, $cookies) {
         $rootScope.$on('$routeChangeStart', function (event, next) {
+            $("#loader").fadeIn();
+            var userData = $cookies.getObject('userData');
 
+            $rootScope.authenticated = false;
+            if (userData) {
+                $rootScope.authenticated = true;
+            }
+            else {
+                var nextUrl = next.$$route.originalPath;
+
+                if (nextUrl == '/home' || nextUrl == '/home') {
+                }
+                else {
+                    $location.path("/home");
+                }
+            }
 
         });
     });
