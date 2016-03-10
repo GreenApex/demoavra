@@ -38,7 +38,7 @@
     0% {
         left: -60px;
         opacity: 0;
-        background-color: yellow;
+        background-color: blue;
     }
     10% {
         left: 0;
@@ -50,7 +50,7 @@
     }
     100% {
         left: 160px;
-        background-color: red;
+        background-color: blue;
         opacity: 0;
     }
 }
@@ -59,7 +59,7 @@
     0% {
         left: -60px;
         opacity: 0;
-        background-color: yellow;
+        background-color: blue;
     }
     10% {
         left: 0;
@@ -71,14 +71,14 @@
     }
     100% {
         left: 160px;
-        background-color: red;
+        background-color: blue;
         opacity: 0;
     }
 }
 .info {
     position: absolute;
     bottom: 0;
-    color: crimson;
+    color: blue;
 }
 .info .info-text {
     display: none;
