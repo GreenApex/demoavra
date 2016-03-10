@@ -39,12 +39,12 @@ function init() {
             data: { href: "#bar"},
             children: [{
                 id: "node24",
-                name: "Jones",
-                data: { href: "#information"},
+                name: "MolineuxP",
+                data: { href: "#information?USER_NAME=MolineuxP&USER_ID=1&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
             }, {
                 id: "node222",
-                name: " Brown",
-                data: { href: "#information"},
+                name: " PannettA",
+                data: { href: "#information?USER_NAME=PannettA&USER_ID=2&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                 children: [{
                     id: "node323",
                     name: "3.23",
@@ -63,12 +63,12 @@ function init() {
             data: { href: "#bar"},
             children: [{
                 id: "node226",
-                name: " Davis",
-                data: { href: "#information"},
+                name: " OscarM",
+                data: { href: "#information?USER_NAME=OscarM&USER_ID=3&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                 children: [{
                     id: "node327",
                     name: "3.27",
-                    data: { href: "#information"},
+                    data: { href: "#information?USER_NAME=OscarM&USER_ID=3&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                     children: [{
                         id: "node428",
                         name: "4.28",
@@ -118,8 +118,8 @@ function init() {
                 }]
             }, {
                 id: "node237",
-                name: "Miller",
-                data: { href: "#information"},
+                name: "julietteM",
+                data: { href: "#information?USER_NAME=julietteM&USER_ID=4&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                 children: [{
                     id: "node338",
                     name: "3.38",
@@ -223,8 +223,8 @@ function init() {
                 }]
             }, {
                 id: "node258",
-                name: "Wilson",
-                data: { href: "#information"},
+                name: "AugustM",
+                data: { href: "#information?USER_NAME=AugustM&USER_ID=5&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                 children: [{
                     id: "node359",
                     name: "3.59",
@@ -263,8 +263,8 @@ function init() {
             data: { href: "#bar"},
             children: [{
                 id: "node266",
-                name: "Moore",
-                data: { href: "#information"},
+                name: "MaxM",
+                data: { href: "#information?USER_NAME=MaxM&USER_ID=6&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                 children: [{
                     id: "node367",
                     name: "3.67",
@@ -348,8 +348,8 @@ function init() {
                 }]
             }, {
                 id: "node283",
-                name: " Taylor",
-                data: { href: "#information"},
+                name: " JamesM",
+                data: { href: "#information?USER_NAME=JamesM&USER_ID=7&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                 children: [{
                     id: "node384",
                     name: "3.84",
@@ -453,8 +453,8 @@ function init() {
                 }]
             }, {
                 id: "node2104",
-                name: " White",
-                data: { href: "#information"},
+                name: " ChrisssyM",
+                data: { href: "#information?USER_NAME=ChrisssyM&USER_ID=8&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                 children: [{
                     id: "node3105",
                     name: "3.105",
@@ -479,7 +479,7 @@ function init() {
             }, {
                 id: "node2109",
                 name: "Martin",
-                data: { href: "#information"},
+                data: { href: "#information?USER_NAME=Martin&USER_ID=9&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                 children: [{
                     id: "node3110",
                     name: "3.110",
@@ -559,7 +559,7 @@ function init() {
             }, {
                 id: "node2125",
                 name: "Harris",
-                data: { href: "#information"},
+                data: { href: "#information?USER_NAME=Harris&USER_ID=10&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                 children: [{
                     id: "node3126",
                     name: "3.126",
@@ -589,7 +589,7 @@ function init() {
             children: [{
                 id: "node2131",
                 name: " Clark",
-                data: { href: "#information"},
+                data: { href: "#information?USER_NAME=Clark&USER_ID=11&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                 children: [{
                     id: "node3132",
                     name: "3.132",
@@ -624,7 +624,7 @@ function init() {
             }, {
                 id: "node2138",
                 name: "Lee",
-                data: { href: "#information"},
+                data: { href: "#information?USER_NAME=Lee&USER_ID=12&STR_DATE=2016-02-25&END_DATE=2016-02-28"},
                 children: [{
                     id: "node3139",
                     name: "3.139",

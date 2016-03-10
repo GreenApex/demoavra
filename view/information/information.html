@@ -1,10 +1,9 @@
 <br>
 <div class="container ">
     <div class="col-md-1">  <h4><a href="#/spacetree" class="btn btn-primary"> Back</a></h4></div>
-    <div class="col-md-11">   <h4 class="text-center"> <b>Efficiency Profile of <span class="font_blue">John</span> for 12.11.2015 to 14.11.2015<b></b></h4></div>
+    <div class="col-md-11">   <h4 class="text-center"> <b>Efficiency Profile of <span class="font_blue">{{userName}}</span> for {{STR_DATE}} to {{END_DATE}}<b></b></h4></div>
 </div>
 <hr>
-
 
 <div class="container">
     <div class="row">
@@ -17,22 +16,24 @@
                         <tr class="font_blue">
                             <th>Total Number</th>
                             <th>Task</th>
-
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td> 1422</td>
-                            <td>Assigned</td>
+                        <tr ng-repeat="informationDeffects in getInformation.DEFECTS">
+                            <td>{{informationDeffects.DEFECT}}</td>
+                            <td>{{informationDeffects.D_DESCRIPTION}}</td>
                         </tr>
                         <tr>
+                            <td>{{msg}}</td>
+                        </tr>
+                        <!--<tr>
                             <td>11990</td>
                             <td>Resolved</td>
                         </tr>
                         <tr>
                             <td> 1883</td>
                             <td>Resolved</td>
-                        </tr>
+                        </tr>-->
                         </tbody>
                     </table>
                 </div>
@@ -45,20 +46,21 @@
                     <table class="table table-striped">
                         <thead>
                         <tr class="font_blue">
-                            <th>Date</th>
-                            <th>Hours</th>
-
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Wroking Hours</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>12.11.2015</td>
-                            <td>4.5 hours<br>
-                                10.00-12.30<br>14.00-16.00
-                            </td>
-
+                        <tr ng-repeat="informationAttendance in getInformation.ATTENDANCE">
+                            <td>{{informationAttendance.ATT_STR_DATE}}</td>
+                            <td>{{informationAttendance.ATT_END_DATE}}</td>
+                            <td>{{informationAttendance.ATT_WORKING}}</td>
                         </tr>
                         <tr>
+                            <td>{{msg}}</td>
+                        </tr>
+                        <!--<tr>
                             <td>13.11.2015</td>
                             <td>1.25 hours<br>
                                 10.00-11.30<br> 
@@ -71,7 +73,7 @@
                                 10.00-11.30<br>14.30-15.00
                             </td>
 
-                        </tr>
+                        </tr>-->
 
                         </tbody>
                     </table>
@@ -91,30 +93,30 @@
                     <table class="table table-striped text-left img-thumbnail">
                         <thead>
                         <tr>
-
                             <h5> Changes by User ECC0458</h5>
-
                         </tr>
                         <tr class="font_blue">
                             <th>Date Change:</th>
                             <th>Object</th>
                             <th>Object Name</th>
                             <th colspan="5" class="text-center">Change Description</th>
-
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td> 12.11.2015</td>
-                            <td> PROG</td>
-                            <td>ZCHARLIE</td>
+                        <tr ng-repeat="informationSap_Activity_Log in getInformation.SAP_ACTIVITY_LOG">
+                            <td>{{informationSap_Activity_Log.SAP_STR_DATE}}</td>
+                            <td>{{informationSap_Activity_Log.SAP_OBJECT}}</td>
+                            <td>{{informationSap_Activity_Log.SAP_OBJECT_NAME}}</td>
                             <td></td>
-                            <td>INSERT     13 *coommnet<br>DELETE     14 WRITE : 'Hi*'.</td>
+                            <td>{{informationSap_Activity_Log.SAP_OBJECT_DESC}}</td>
+                            <!--<td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
+                            <td></td>-->
                         </tr>
                         <tr>
+                            <td>{{msg}}</td>
+                        </tr>
+                        <!--<tr>
                             <td>13.11.2015</td>
                             <td>PROG</td>
                             <td>ZTESTCHARLIE</td>
@@ -198,7 +200,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                        </tr>
+                        </tr>-->
 
 
                         </tbody>

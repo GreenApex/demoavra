@@ -58,11 +58,8 @@ deskApp.config(['$routeProvider',
                     $location.path("/home");
                 }
             }
-
         });
     });
-
-
 
 var deskControllers = angular.module('myControllers', []);
 
