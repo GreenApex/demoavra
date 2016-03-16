@@ -10,17 +10,24 @@ $USER_ID = $_REQUEST['USER_ID'] ;
 $STR_DATE = $_REQUEST['STR_DATE'] ;
 $END_DATE = $_REQUEST['END_DATE'] ;
 
+$ATT_ID = array();
+$ATT_USER_ID = array();
+$ATT_DATE = array();
+$ATT_STR_DATE = array();
+$ATT_END_DATE = array();
+$starttime = array();
+$endtime = array();
+$timediff = array();
 
 if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
 {
 
-  $whereA = array();
   $whereD = array();
   $whereS = array();
 
-  $whereA[] = "ATT_USER_ID ='" . $USER_ID . "'";
   $whereD[] = "D_USER_ID ='" . $USER_ID . "'";
   $whereS[] = "SAL_USER_ID ='" . $USER_ID . "'";
+
 
   if (!empty($STR_DATE) && !empty($END_DATE))
   {
@@ -32,8 +39,6 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
       $STR_DATE = $END_DATE;
       $END_DATE = $STR_DATE_TEMP;
     }
-    $whereA[] = "ATT_STR_DATE BETWEEN '" . $STR_DATE . "' AND '" . $END_DATE . "'";
-    $whereA[] = "ATT_END_DATE BETWEEN '" . $STR_DATE . "' AND '" . $END_DATE . "'";
 
     $whereD[] = "D_STR_DATE BETWEEN '" . $STR_DATE . "' AND '" . $END_DATE . "'";
     $whereD[] = "D_END_DATE BETWEEN '" . $STR_DATE . "' AND '" . $END_DATE . "'";
@@ -44,8 +49,6 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
   else if (!empty($STR_DATE))
   {
     $STR_DATE = date('Y-m-d', strtotime($STR_DATE));
-    $whereA[] = "ATT_STR_DATE ='" . $STR_DATE . "'";
-    $whereA[] = "ATT_END_DATE ='" . $STR_DATE . "'";
 
     $whereD[] = "D_STR_DATE ='" . $STR_DATE . "'";
     $whereD[] = "D_END_DATE ='" . $STR_DATE . "'";
@@ -56,8 +59,6 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
   else if (!empty($END_DATE))
   {
     $END_DATE = date('Y-m-d', strtotime($END_DATE));
-    $whereA[] = "ATT_STR_DATE ='" . $END_DATE . "'";
-    $whereA[] = "ATT_END_DATE ='" . $END_DATE . "'";
 
     $whereD[] = "D_STR_DATE ='" . $END_DATE . "'";
     $whereD[] = "D_END_DATE ='" . $END_DATE . "'";
@@ -68,8 +69,38 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
 
   $conn = getConnection();
 
-  $sqlA = "SELECT * FROM `ATTENDANCE` WHERE  " . implode(' AND ', $whereA);
-  $attendanceData = getDataFromQuery($conn, $sqlA);
+    // Set timezone
+    date_default_timezone_set('UTC');
+
+$i= 0;
+
+    while (strtotime($STR_DATE) <= strtotime($END_DATE)) {
+        $i=$i+ 1;
+        $sqlA = "SELECT A.ATT_STR_DATE as start,B.ATT_END_DATE as end,CAST(A.ATT_STR_DATE as DATE) as date,timediff(CAST(B.ATT_END_DATE as TIME), CAST(A.ATT_STR_DATE as TIME)) as timediff FROM ATTENDANCE A, ATTENDANCE B where CAST(A.ATT_STR_DATE as DATE)= CAST(B.ATT_END_DATE as DATE) AND A.ATT_ID
+                 != B.ATT_ID AND CAST(A.ATT_STR_DATE as DATE)='".$STR_DATE."' AND A.ATT_ID = (B.ATT_ID - 1) AND A.ATT_USER_ID =". $USER_ID;
+        $STR_DATE = date ("Y-m-d", strtotime("+1 day", strtotime($STR_DATE)));
+        $result = $conn->query($sqlA);
+
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                $ATT_DATE[$i] = $row["date"];
+                $ATT_STR_DATE[$i]= $row["start"];
+                $ATT_END_DATE[$i]= $row["end"];
+                $timediff[$i] = $row["timediff"];
+
+            $whereA[] = array("ATT_DATE" => $ATT_DATE[$i],"ATT_STR_DATE" => $ATT_STR_DATE[$i],"ATT_END_DATE" => $ATT_END_DATE[$i] ,"ATT_WORKING" => $timediff[$i]);
+
+
+
+            }
+
+            }
+        else {
+            echo "0 results";
+        }
+    }
 
   $sqlD = "SELECT * FROM `DEFECTS` WHERE  " . implode(' AND ', $whereD);
   $deffectsData = getDataFromQuery($conn, $sqlD);
@@ -80,11 +111,11 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
 
 
   $allReturnData = array();
-  $allReturnData['ATTENDANCE'] = $attendanceData;
+  $allReturnData['ATTENDANCE'] = $whereA;
   $allReturnData['DEFECTS'] = $deffectsData;
   $allReturnData['SAP_ACTIVITY_LOG'] = $sap_activity_logData;
 
-  if (!empty($allReturnData) && (count($attendanceData) || count($deffectsData) || count($sap_activity_logData) ))
+  if (!empty($allReturnData) && (count($whereA) || count($deffectsData) || count($sap_activity_logData) ))
   {
     jsonResponce(array('status' => 1, 'msg' => "Records found", 'data' => $allReturnData));
   }
@@ -107,6 +138,11 @@ function jsonResponce($array = array())
 function getConnection()
 {
 
+  /*$servername = "localhost:3306";
+  $username = "root";
+  $password = "root";
+  $dbname = "AvraQuality";*/
+
   $servername = "localhost";
   $username = "dev_avra";
   $password = "green123$";
@@ -123,7 +159,7 @@ function getConnection()
 
 function getDataFromQuery($mysqli, $query)
 {
- 
+
   $row = array();
   if ($result = $mysqli->query($query))
   {

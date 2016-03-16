@@ -40,6 +40,11 @@ function jsonResponce($array = array())
 function getConnection()
 {
 
+  /*$servername = "localhost:3306";
+  $username = "root";
+  $password = "root";
+  $dbname = "AvraQuality";*/
+
   $servername = "localhost";
   $username = "dev_avra";
   $password = "green123$";
