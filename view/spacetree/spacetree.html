@@ -1,20 +1,4 @@
-
-iv id="container">
-    <script>
-        var plus14days = new Date();
-        plus14days.setDate(plus14days.getDate() - 7);
-        $(".datepicker").datepicker("setDate", plus14days);
-        $(".datepicker").datepicker('update');
-    </script>
-
-    <script>
-        var i = new Date();
-        i.setDate(i.getDate() + 0);
-        $(".datepicker1").datepicker("setDate", i);
-        $(".datepicker1").datepicker('update');
-
-    </script>
-
+<div id="container">
 
     <div id="center-container">
         <div id="infovis"></div>
@@ -45,7 +29,8 @@ iv id="container">
                 </td>
 
                 <td>
-                    <input class="datepicker" data-date-format="mm/dd/yyyy">
+                    <input name="startDate" id="startDate" class="datepicker" data-date-format="yyyy-mm-dd" />
+
                 </td>
 
             </tr>
@@ -54,7 +39,7 @@ iv id="container">
                     <label>End Date </label>
                 </td>
                 <td>
-                    <input class="datepicker datepicker1" data-date-format="mm/dd/yyyy">
+                    <input name="endDate" id="endDate" class="datepicker datepicker1" data-date-format="yyyy-mm-dd">
                 </td>
 
             </tr>
@@ -98,14 +83,14 @@ iv id="container">
         </table>
     </div>
     <div id="left-container">
-        <img src="assets/images/logo.png" class="img-thumbnail logo" alt="noimg" />
+        <img src="assets/images/logo.png" class="img-thumbnail logo" alt="noimg"/>
 
         <h4 class="large_text">Welcome Back Charlie!</h4>
         <br>
 
         <h4 class="latest_news"><a href="" class="text-center" style="font-size: 20px"> Help Links</a></h4>
-        <h5 class="latest_news1"><a href="http://avraquality.com/offshorereview.php">How to change the Date Range from the default 7 days</a></h5>
-        <h5 class="latest_news1"><a href="http://www.avraquality.com/sapintegration.php">How to rank all resources</a></h5>      
+        <h5 class="latest_news1"><a href="http://avraquality.com/offshorereview.php">How to change the Date Range from
+            the default 7 days</a></h5>
+        <h5 class="latest_news1"><a href="http://www.avraquality.com/sapintegration.php">How to rank all resources</a>
+        </h5>
     </div>
-
-

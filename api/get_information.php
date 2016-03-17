@@ -6,7 +6,7 @@ header('Access-Control-Allow-Headers: Content-Type');
 @error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING ^ E_DEPRECATED ^ E_STRICT);
 ini_set('display_errors', '1');
 
-$USER_ID = $_REQUEST['USER_ID'] ;
+$USER_ID = $_REQUEST['USER_ID'];
 $STR_DATE = $_REQUEST['STR_DATE'] ;
 $END_DATE = $_REQUEST['END_DATE'] ;
 
@@ -18,7 +18,8 @@ $ATT_END_DATE = array();
 $starttime = array();
 $endtime = array();
 $timediff = array();
-
+$beacon = array();
+$beacon_desc = array();
 if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
 {
 
@@ -76,11 +77,10 @@ $i= 0;
 
     while (strtotime($STR_DATE) <= strtotime($END_DATE)) {
         $i=$i+ 1;
-        $sqlA = "SELECT A.ATT_STR_DATE as start,B.ATT_END_DATE as end,CAST(A.ATT_STR_DATE as DATE) as date,timediff(CAST(B.ATT_END_DATE as TIME), CAST(A.ATT_STR_DATE as TIME)) as timediff FROM ATTENDANCE A, ATTENDANCE B where CAST(A.ATT_STR_DATE as DATE)= CAST(B.ATT_END_DATE as DATE) AND A.ATT_ID
-                 != B.ATT_ID AND CAST(A.ATT_STR_DATE as DATE)='".$STR_DATE."' AND A.ATT_ID = (B.ATT_ID - 1) AND A.ATT_USER_ID =". $USER_ID;
+        $sqlA = "SELECT A.ATT_STR_DATE as start,B.ATT_END_DATE as end,CAST(A.ATT_STR_DATE as DATE) as date,timediff(CAST(B.ATT_END_DATE as TIME), CAST(A.ATT_STR_DATE as TIME)) as timediff, B.ATT_UI_BEACON as beacon FROM ATTENDANCE A, ATTENDANCE B where CAST(A.ATT_STR_DATE as DATE)= CAST(B.ATT_END_DATE as DATE) AND A.ATT_ID
+                 != B.ATT_ID AND CAST(A.ATT_STR_DATE as DATE)='".$STR_DATE."' AND A.ATT_ID = (B.ATT_ID - 1) AND A.ATT_USER_ID =".$USER_ID;
         $STR_DATE = date ("Y-m-d", strtotime("+1 day", strtotime($STR_DATE)));
         $result = $conn->query($sqlA);
-
 
         if ($result->num_rows > 0) {
             // output data of each row
@@ -89,16 +89,26 @@ $i= 0;
                 $ATT_STR_DATE[$i]= $row["start"];
                 $ATT_END_DATE[$i]= $row["end"];
                 $timediff[$i] = $row["timediff"];
+                $beacon[$i]= $row["beacon"];
+                $sqlB= "SELECT BE_UI_DESCRIPTION as description FROM BEACON_MASTER where BE_UI_ID='".$beacon[$i]."'";
+                $result_beacon = $conn->query($sqlB);
+                if ($result_beacon->num_rows > 0) {
+                            // output data of each row
+                            while($row = $result_beacon->fetch_assoc()) {
+                                $beacon_desc[$i]= $row["description"];
+                            }
+                }else
+                {
+                    $beacon_desc[$i]= null;
+                }
 
-            $whereA[] = array("ATT_DATE" => $ATT_DATE[$i],"ATT_STR_DATE" => $ATT_STR_DATE[$i],"ATT_END_DATE" => $ATT_END_DATE[$i] ,"ATT_WORKING" => $timediff[$i]);
-
-
+            $whereA[] = array("ATT_DATE" => $ATT_DATE[$i],"ATT_STR_DATE" => $ATT_STR_DATE[$i],"ATT_END_DATE" => $ATT_END_DATE[$i] ,"ATT_WORKING" => $timediff[$i]  ,"BEACON_DESCRIPTION" => $beacon_desc[$i]);
 
             }
 
             }
-        else {
-            echo "0 results";
+        else{
+            //echo "0 results";
         }
     }
 
@@ -138,15 +148,15 @@ function jsonResponce($array = array())
 function getConnection()
 {
 
-  /*$servername = "localhost:3306";
+  $servername = "localhost:3306";
   $username = "root";
   $password = "root";
-  $dbname = "AvraQuality";*/
+  $dbname = "AvraQuality";
 
-  $servername = "localhost";
+  /*$servername = "localhost";
   $username = "dev_avra";
   $password = "green123$";
-  $dbname = "AvraQuality";
+  $dbname = "AvraQuality";*/
 
 
   $conn = new mysqli($servername, $username, $password, $dbname);
