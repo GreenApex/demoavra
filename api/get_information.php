@@ -9,6 +9,7 @@ ini_set('display_errors', '1');
 $USER_ID = $_REQUEST['USER_ID'];
 $STR_DATE = $_REQUEST['STR_DATE'] ;
 $END_DATE = $_REQUEST['END_DATE'] ;
+$END_DATE1 = date ("Y-m-d", strtotime("+1 day", strtotime($END_DATE)));
 
 $ATT_ID = array();
 $ATT_USER_ID = array();
@@ -20,11 +21,15 @@ $endtime = array();
 $timediff = array();
 $beacon = array();
 $beacon_desc = array();
+$DEFECT_ID = array();
+$DEFECT_DESCRIPTION=array();
+
 if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
 {
 
   $whereD = array();
   $whereS = array();
+  $whereY = array();
 
   $whereD[] = "D_USER_ID ='" . $USER_ID . "'";
   $whereS[] = "SAL_USER_ID ='" . $USER_ID . "'";
@@ -34,6 +39,7 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
   {
     $STR_DATE = date('Y-m-d', strtotime($STR_DATE));
     $END_DATE = date('Y-m-d', strtotime($END_DATE));
+
     if (strtotime($STR_DATE) >= strtotime($END_DATE))
     {
       $STR_DATE_TEMP = $STR_DATE;
@@ -44,8 +50,8 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
     $whereD[] = "D_STR_DATE BETWEEN '" . $STR_DATE . "' AND '" . $END_DATE . "'";
     $whereD[] = "D_END_DATE BETWEEN '" . $STR_DATE . "' AND '" . $END_DATE . "'";
 
-    $whereS[] = "SAP_STR_DATE BETWEEN '" . $STR_DATE . "' AND '" . $END_DATE . "'";
-    $whereS[] = "SAP_END_DATE BETWEEN '" . $STR_DATE . "' AND '" . $END_DATE . "'";
+    $whereS[] = "SAP_STR_DATE BETWEEN '" . $STR_DATE . "' AND '" . $END_DATE1 . "'";
+    $whereS[] = "SAP_END_DATE BETWEEN '" . $STR_DATE . "' AND '" . $END_DATE1. "'";
   }
   else if (!empty($STR_DATE))
   {
@@ -64,9 +70,11 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
     $whereD[] = "D_STR_DATE ='" . $END_DATE . "'";
     $whereD[] = "D_END_DATE ='" . $END_DATE . "'";
 
-    $whereS[] = "SAP_STR_DATE ='" . $END_DATE . "'";
-    $whereS[] = "SAP_END_DATE ='" . $END_DATE . "'";
+    $whereS[] = "SAP_STR_DATE ='" . $END_DATE1 . "'";
+    $whereS[] = "SAP_END_DATE ='" . $END_DATE1 . "'";
   }
+    $STR_DATE1=$STR_DATE;
+    $END_DATE1=$END_DATE;
 
   $conn = getConnection();
 
@@ -74,7 +82,7 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
     date_default_timezone_set('UTC');
 
 $i= 0;
-
+$j=0;
     while (strtotime($STR_DATE) <= strtotime($END_DATE)) {
         $i=$i+ 1;
         $sqlA = "SELECT A.ATT_STR_DATE as start,B.ATT_END_DATE as end,CAST(A.ATT_STR_DATE as DATE) as date,timediff(CAST(B.ATT_END_DATE as TIME), CAST(A.ATT_STR_DATE as TIME)) as timediff, B.ATT_UI_BEACON as beacon FROM ATTENDANCE A, ATTENDANCE B where CAST(A.ATT_STR_DATE as DATE)= CAST(B.ATT_END_DATE as DATE) AND A.ATT_ID
@@ -112,9 +120,36 @@ $i= 0;
         }
     }
 
-  $sqlD = "SELECT * FROM `DEFECTS` WHERE  " . implode(' AND ', $whereD);
-  $deffectsData = getDataFromQuery($conn, $sqlD);
 
+    while (strtotime($STR_DATE1) <= strtotime($END_DATE1)) {
+
+        $j=$j+ 1;
+        $sqlA = "SELECT DEFECT as defect, D_DESCRIPTION as description FROM DEFECTS where D_USER_ID = ".$USER_ID." AND CAST(D_STR_DATE as DATE)='".$STR_DATE1."'";
+        $STR_DATE1 = date ("Y-m-d", strtotime("+1 day", strtotime($STR_DATE1)));
+        $result = $conn->query($sqlA);
+
+        if ($result->num_rows > 0) {
+
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                $DEFECT_ID[$j] = $row["defect"];
+
+                $DEFECT_DESCRIPTION[$j] = $row["description"];
+
+            $whereY[] = array("DEFECT" => $DEFECT_ID[$j],"D_DESCRIPTION" => $DEFECT_DESCRIPTION[$j]);
+
+            }
+
+            }
+        else{
+            //echo "0 results";
+        }
+    }
+
+
+ /* $sqlD = "SELECT * FROM `DEFECTS` WHERE  " . implode(' AND ', $whereD);
+  $deffectsData = getDataFromQuery($conn, $sqlD);
+*/
 
   $sqlS = "SELECT * FROM `SAP_ACTIVITY_LOG` WHERE  " . implode(' AND ', $whereS);
   $sap_activity_logData = getDataFromQuery($conn, $sqlS);
@@ -122,10 +157,10 @@ $i= 0;
 
   $allReturnData = array();
   $allReturnData['ATTENDANCE'] = $whereA;
-  $allReturnData['DEFECTS'] = $deffectsData;
+  $allReturnData['DEFECTS'] = $whereY;
   $allReturnData['SAP_ACTIVITY_LOG'] = $sap_activity_logData;
 
-  if (!empty($allReturnData) && (count($whereA) || count($deffectsData) || count($sap_activity_logData) ))
+  if (!empty($allReturnData) && (count($whereA) || count($whereY) || count($sap_activity_logData) ))
   {
     jsonResponce(array('status' => 1, 'msg' => "Records found", 'data' => $allReturnData));
   }

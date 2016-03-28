@@ -63,18 +63,18 @@
             </tr>
             <tr>
                 <td>
-                    <label style="font-size: 12px">Defect Resolution </label>
+                    <label style="font-size: 12px">Defects Resolved </label>
                 </td>
                 <td>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="deferesolved">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label style="font-size: 12px">Attendance </label>
+                    <label style="font-size: 12px">Undetected Time % </label>
                 </td>
                 <td>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="undetected">
                 </td>
             </tr>
             <td>
@@ -85,7 +85,7 @@
     <div id="left-container">
         <img src="assets/images/logo.png" class="img-thumbnail logo" alt="noimg"/>
 
-        <h4 class="large_text">Welcome Back Charlie!</h4>
+        <h4 class="large_text">Welcome Back {{userName}} !</h4>
         <br>
 
         <h4 class="latest_news"><a href="" class="text-center" style="font-size: 20px"> Help Links</a></h4>

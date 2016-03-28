@@ -1,5 +1,10 @@
 var labelType, useGradients, nativeTextSupport, animate;
 
+
+
+
+
+
 (function () {
     var ua = navigator.userAgent,
         iStuff = ua.match(/iPhone/i) || ua.match(/iPad/i),
@@ -27,8 +32,13 @@ var labelType, useGradients, nativeTextSupport, animate;
  };*/
 
 
+/*var endDate = document.getElementsById('endDate');
+alert(endDate);*/
+
+
 function init() {
     //init data
+
     var json = {
         id: "node02",
         name: "john",

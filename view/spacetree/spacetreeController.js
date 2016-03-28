@@ -5,8 +5,11 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
 
         var userData = $cookies.getObject('userData');
 
-        console.log(JSON.stringify(userData));
-        
+        $scope.userName = userData.USER_NAME
+        console.log(JSON.stringify($scope.userName));
+        $scope.deferesolved = 0;
+        $scope.undetected = 0;
+
         var labelType, useGradients, nativeTextSupport, animate;
 
         var plus14days = new Date();
