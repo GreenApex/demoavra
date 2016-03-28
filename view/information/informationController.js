@@ -1,7 +1,7 @@
 'use strict';
 
-deskControllers.controller('informationController', ['$scope', '$window', '$cookies', '$location', 'getinfromation',
-    function ($scope, $window, $cookies, $location, getinfromation) {
+deskControllers.controller('informationController', ['$scope', '$window', '$cookies', '$location', 'getinfromation', 'getuserconfrom',
+    function ($scope, $window, $cookies, $location, getinfromation, getuserconfrom) {
 
         $(".loader").fadeIn();
         //var userData = $cookies.getObject('userData');
@@ -29,7 +29,7 @@ deskControllers.controller('informationController', ['$scope', '$window', '$cook
                     $(".loader").fadeOut();
                     $scope.getInformation = response.data;
                     $.toaster(response.msg, 'Congratulation', 'success');
-                    console.log('Get Information : ' +JSON.stringify($scope.getInformation));
+                    //console.log('Get Information : ' +JSON.stringify($scope.getInformation));
                 }
                 else{
                     $(".loader").fadeOut();
@@ -39,5 +39,28 @@ deskControllers.controller('informationController', ['$scope', '$window', '$cook
         },function(){
                 $.toaster("Connection Problem ", 'Alert', 'danger');
         });
+
+        getuserconfrom.get(
+            {
+                USER_ID: $scope.USER_ID,
+                STR_DATE: $scope.STR_DATE,
+                END_DATE: $scope.END_DATE
+            }, function (response) {
+                //$(".loader").fadeIn();
+                console.log('Get Confromation : ' +JSON.stringify(response));
+                if(response.status == 1){
+                    $(".loader").fadeOut();
+                    $scope.getUserConfrom = response.data;
+                   // $.toaster(response.msg, 'Congratulation', 'success');
+                    //console.log('Get Confromation : ' +JSON.stringify($scope.getUserConfrom));
+                }
+                else{
+                    $(".loader").fadeOut();
+                    $scope.msg = "Not Data Avialable...";
+                    $.toaster(response.msg, 'Alert', 'warning');
+                }
+            },function(){
+                $.toaster("Connection Problem ", 'Alert', 'danger');
+            });
     }]);
 

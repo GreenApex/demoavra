@@ -13,3 +13,10 @@ deskServices.factory('getinfromation',['$resource','webAppConstant',
             query: { method: "POST"}
         });
     }]);
+
+deskServices.factory('getuserconfrom',['$resource','webAppConstant',
+    function($resource,webAppConstant){
+        return $resource(webAppConstant + 'get_user_confirmation.php', {USER_ID:'@USER_ID', STR_DATE:'@STR_DATE', END_DATE:'@END_DATE'}, {
+            query: { method: "POST"}
+        });
+    }]);

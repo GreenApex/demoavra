@@ -19,6 +19,8 @@ $UC_INCRESE = 0;
 $UC_TIME_DELTAS = array();
 $UC_ATT_WORKINGS = array();
 $UC_INCRESE = array();
+$UC_TIMEDIFF = array();
+$UC_DDESCRIPTION = array();
 
 if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
 {
@@ -31,7 +33,7 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
       $i= 0;
   while (strtotime($STR_DATE) <= strtotime($END_DATE)) {
   $i=$i+ 1;
-  $sql = "SELECT CAST(UC_DATE AS DATE) as UC_DATE,UC_TIME_DELTA,UC_ATT_WORKING,UC_ACTION,UC_REACTION_TIME,TIME_TO_SEC(UC_TIME_DELTA)/60  AS UC_TIME_DELTAS,TIME_TO_SEC(UC_ATT_WORKING)/60  AS UC_ATT_WORKINGS FROM USER_CONFIRMATION where date(UC_DATE) = '".$STR_DATE."'  AND UC_USER_ID =".$USER_ID;
+  $sql = "SELECT CAST(UC_DATE AS DATE) as UC_DATE,UC_TIME_DELTA,UC_ATT_WORKING,UC_ACTION,UC_REACTION_TIME,TIME_TO_SEC(UC_TIME_DELTA)/60  AS UC_TIME_DELTAS,TIME_TO_SEC(UC_ATT_WORKING)/60  AS UC_ATT_WORKINGS,CAST((UC_TIME_DELTA-UC_ATT_WORKING) as time) as timediff,UC_DESCRIPTION FROM USER_CONFIRMATION where date(UC_DATE) = '".$STR_DATE."'  AND UC_USER_ID =".$USER_ID;
   $STR_DATE = date ("Y-m-d", strtotime("+1 day", strtotime($STR_DATE)));
   $result = $conn->query($sql);
 
@@ -48,24 +50,38 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
       $UC_REACTION_TIME[$i] = $row["UC_REACTION_TIME"];
       $UC_TIME_DELTAS[$i] = $row["UC_TIME_DELTAS"];
       $UC_ATT_WORKINGS[$i] = $row["UC_ATT_WORKINGS"];
+      $UC_TIMEDIFF[$i] = $row["timediff"];
+      $UC_DDESCRIPTION[$i] = $row["UC_DESCRIPTION"];
 
       if($UC_TIME_DELTAS[$i] == $UC_ATT_WORKINGS[$i])
       {
+
        $UC_INCRESE[$i] = "0";
+
       }
-      else if($UC_TIME_DELTAS[$i] > $UC_ATT_WORKINGS[$i] )
+      else if($UC_TIME_DELTAS[$i] > $UC_ATT_WORKINGS[$i])
       {
             $UC_INCRESE[$i] = (($UC_TIME_DELTAS[$i]-$UC_ATT_WORKINGS[$i])/$UC_ATT_WORKINGS[$i])*100;
-       }else if($UC_TIME_DELTAS[$i] < $UC_ATT_WORKINGS[$i] )
-            {
-                  $UC_INCRESE[$i] = (($UC_TIME_DELTAS[$i]-$UC_ATT_WORKINGS[$i])/$UC_ATT_WORKINGS[$i])*100;
-                   }
+            if($UC_INCRESE[$i]==0){
+
+                $UC_INCRESE[$i] = "No Time Detected";
+            }
+
+      }
+      else if($UC_TIME_DELTAS[$i] < $UC_ATT_WORKINGS[$i] )
+      {
+        $UC_INCRESE[$i] = (($UC_TIME_DELTAS[$i]-$UC_ATT_WORKINGS[$i])/$UC_ATT_WORKINGS[$i])*100;
+        if($UC_INCRESE[$i]==0){
+
+            $UC_INCRESE[$i] = "No Time Detected";
+        }
+
+      }
 
       else{
             //echo "0 result";
       }
-             $whereA [] = array("UC_DATE" => $UC_DATE[$i], "UC_TIME_DELTA" => $UC_TIME_DELTA[$i], "UC_ATT_WORKING" => $UC_ATT_WORKING[$i], "UC_ACTION" => $UC_ACTION[$i], "UC_REACTION_TIME" => $UC_REACTION_TIME[$i], "UC_INCRESE" => round($UC_INCRESE[$i],2));
-
+             $whereA [] = array("UC_DATE" => $UC_DATE[$i], "UC_TIME_DELTA" => $UC_TIME_DELTA[$i], "UC_ATT_WORKING" => $UC_ATT_WORKING[$i], "UC_ACTION" => $UC_ACTION[$i], "UC_REACTION_TIME" => $UC_REACTION_TIME[$i], "UC_TIME_DIFF" => $UC_TIMEDIFF[$i], "UC_DESCRIPTION" => $UC_DDESCRIPTION[$i], "UC_INCRESE" => $UC_INCRESE[$i]);
     }
 
     }
@@ -101,12 +117,12 @@ function getConnection()
   $username = "root";
   $password = "root";
   $dbname = "AvraQuality";
-/*
-  $servername = "localhost";
+
+/*  $servername = "localhost";
   $username = "dev_avra";
   $password = "green123$";
-  $dbname = "AvraQuality";
-*/
+  $dbname = "AvraQuality";*/
+
 
   $conn = new mysqli($servername, $username, $password, $dbname);
   if ($conn->connect_error)
