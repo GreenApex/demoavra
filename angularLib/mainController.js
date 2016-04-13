@@ -4,7 +4,7 @@ angular.element(document).ready(function () {
     angular.bootstrap(document, ['myApp']);
 });
 //module for myApp decide route/controller/service/directive
-var deskApp = angular.module('myApp', ['ngRoute', 'myControllers', 'myServices', 'dndLists', 'ngCookies',]);
+var deskApp = angular.module('myApp', ['ngRoute', 'myControllers', 'myServices', 'ngCookies']);
 
 deskApp.constant('webAppConstant', 'http://api.demoavra.eu/');
 
@@ -13,17 +13,6 @@ deskApp.config(['$routeProvider',
             $routeProvider.when('/home', {
                 templateUrl: 'view/home/home.html',
                 controller: 'homeController',
-                access: {
-                    requiresBackground: true
-                },
-                resolve: {
-                    // I will cause a 1 second delay
-                    delay: function ($q, $timeout) {
-                        var delay = $q.defer();
-                        $timeout(delay.resolve, 1000);
-                        return delay.promise;
-                    }
-                }
             }).when('/spacetree', {
                 templateUrl: 'view/spacetree/spacetree.html',
                 controller: 'spacetreeController'
@@ -33,7 +22,8 @@ deskApp.config(['$routeProvider',
                 controller: 'informationController'
 
             }).when('/bar', {
-                templateUrl: 'view/bar/bar.html'
+                templateUrl: 'view/bar/bar.html',
+                controller: 'barController'
 
             }).otherwise({
                 redirectTo: '/home'
@@ -64,5 +54,3 @@ deskApp.config(['$routeProvider',
 var deskControllers = angular.module('myControllers', []);
 
 var deskServices = angular.module('myServices', ['ngResource']);
-  
-  

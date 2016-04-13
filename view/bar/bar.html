@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<!--<script type="text/javascript">
     $(function () {
         $('#container').highcharts({
             chart: {
@@ -37,11 +37,20 @@
             ]
         });
     });
-</script>
+</script>-->
 
 <div class="container margin10A">
     <a href="#/spacetree" class="btn btn-primary">Back</a>
 </div>
-
-<div id="container" style="min-width: 310px; max-width: 1000px; height: 1200px; margin: 0 auto"></div>
-
+<!--<div id="container" style="min-width: 310px; max-width: 1000px; height: 1200px; margin: 0 auto">
+</div>-->
+<div id="container" style="min-width: 310px; max-width: 1000px; height: 1200px; margin: 0 auto">
+  <bar-chart chart="bar"
+              title-text="Team Performance"
+              category="categorys"
+              y-axis-type="Overall Performance"
+              legend="true"
+              plot-Options="normal"
+              seriesdata="chartData">
+  </bar-chart>
+</div>

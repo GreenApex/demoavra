@@ -46,18 +46,19 @@
 
         </table>
         <h4>Key Performance Indicators </h4>
+        <form name="calculateForm" novalidate>
         <table class="table table-striped ">
             <tr>
                 <td>
                     <label style="font-size: 12px">SAP Activity Level </label>
                 </td>
                 <td>
-                    <select>
-                        <option>Very high</option>
-                        <option>High</option>
-                        <option> Medium</option>
-                        <option>Low</option>
-                        <option>None</option>
+                    <select ng-model="sapactivitylevel">
+                        <option value="Very high">Very high</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                        <option value="None">None</option>
                     </select>
                 </td>
             </tr>
@@ -65,27 +66,28 @@
                 <td>
                     <label style="font-size: 12px">Defects Resolved </label>
                 </td>
-                <td>
-                    <input type="text" class="form-control" ng-model="deferesolved">
+                <td ng-class="{ 'has-error': calculateForm.defects.$invalid}">
+                    <input type="text" class="form-control" ng-model="defects" name="defects" ng-pattern="/^\d+$/" required>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label style="font-size: 12px">Undetected Time % </label>
+                    <label style="font-size: 12px">Undetected Hours</label>
                 </td>
-                <td>
-                    <input type="text" class="form-control" ng-model="undetected">
+                <td ng-class="{ 'has-error': calculateForm.detectedTime.$invalid}">
+                    <input type="text" class="form-control" ng-model="detectedTime" name="detectedTime" ng-pattern="/^\d+$/" required>
                 </td>
             </tr>
             <td>
-                <a class="btn btn-primary btn-block col-md-offset-6" href="">Recalculate</a>
+                <a class="btn btn-primary btn-block col-md-offset-6" href="" ng-disabled="calculateForm.$invalid" ng-click="recalculate()">Recalculate</a>
             </td>
         </table>
+        </form>
     </div>
     <div id="left-container">
         <img src="assets/images/logo.png" class="img-thumbnail logo" alt="noimg"/>
 
-        <h4 class="large_text">Welcome Back {{userName}} !</h4>
+        <h4 class="large_text">Welcome back {{userName}}!</h4>
         <br>
 
         <h4 class="latest_news"><a href="" class="text-center" style="font-size: 20px"> Help Links</a></h4>

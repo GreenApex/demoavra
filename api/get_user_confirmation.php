@@ -34,6 +34,7 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
   while (strtotime($STR_DATE) <= strtotime($END_DATE)) {
   $i=$i+ 1;
   $sql = "SELECT CAST(UC_DATE AS DATE) as UC_DATE,UC_TIME_DELTA,UC_ATT_WORKING,UC_ACTION,UC_REACTION_TIME,TIME_TO_SEC(UC_TIME_DELTA)/60  AS UC_TIME_DELTAS,TIME_TO_SEC(UC_ATT_WORKING)/60  AS UC_ATT_WORKINGS,CAST((UC_TIME_DELTA-UC_ATT_WORKING) as time) as timediff,UC_DESCRIPTION FROM USER_CONFIRMATION where date(UC_DATE) = '".$STR_DATE."'  AND UC_USER_ID =".$USER_ID;
+
   $STR_DATE = date ("Y-m-d", strtotime("+1 day", strtotime($STR_DATE)));
   $result = $conn->query($sql);
 
@@ -66,7 +67,6 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
 
                 $UC_INCRESE[$i] = "No Time Detected";
             }
-
       }
       else if($UC_TIME_DELTAS[$i] < $UC_ATT_WORKINGS[$i] )
       {
@@ -75,7 +75,6 @@ if (!empty($USER_ID) && !empty($STR_DATE) && !empty($END_DATE))
 
             $UC_INCRESE[$i] = "No Time Detected";
         }
-
       }
 
       else{
@@ -118,7 +117,7 @@ function getConnection()
   $password = "root";
   $dbname = "AvraQuality";
 
-/*  $servername = "localhost";
+/*$servername = "localhost";
   $username = "dev_avra";
   $password = "green123$";
   $dbname = "AvraQuality";*/

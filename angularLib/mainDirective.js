@@ -131,3 +131,52 @@ deskApp.directive('fileModel', ['$parse', function ($parse) {
     };
 }]);
 
+deskApp.directive('barChart', function () {
+    return {
+        restrict: 'E',
+        template: '<div></div>',
+        replace: true,
+
+        link: function (scope, element, attrs) {
+              var chartName;
+              function changeData(){
+                chartName = {
+                  chart: {
+                      type: 'bar'
+                  },
+                  title: {
+                      text: attrs.titleText
+                  },
+                  xAxis: {
+                    categories: scope.$eval(attrs.category)
+                  },
+                  yAxis: {
+                      min: 0,
+                      title: {
+                          text: attrs.yAxisType
+                      }
+                  },
+                  legend: {
+                      reversed: attrs.legend
+                  },
+                  plotOptions: {
+                      series: {
+                          stacking: attrs.plotOptions
+                      }
+                  },
+                  series: scope.$eval(attrs.seriesdata)
+                }
+                  scope.$watch(function () {
+                      return attrs.chart;
+                  }, function () {
+                      if (!attrs.chart) return;
+                      var chart = chartName;
+                      element.highcharts(chart);
+                  });
+              }
+                scope.$on('changeData',function(event, data){
+                    changeData()
+                });
+        }
+    }
+});

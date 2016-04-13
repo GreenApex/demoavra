@@ -1,14 +1,14 @@
 'use strict';
 
-deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookies',
-    function ($scope, $window, $cookies) {
+deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookies','recalculate',
+    function ($scope, $window, $cookies, recalculate) {
 
         var userData = $cookies.getObject('userData');
 
         $scope.userName = userData.USER_NAME
         console.log(JSON.stringify($scope.userName));
-        $scope.deferesolved = 0;
-        $scope.undetected = 0;
+        $scope.defects = 0;
+        $scope.detectedTime = 0;
 
         var labelType, useGradients, nativeTextSupport, animate;
 
@@ -16,7 +16,7 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
         plus14days.setDate(plus14days.getDate() - 7);
         $(".datepicker").datepicker("setDate", plus14days);
         var a = $(".datepicker").datepicker('update');
-        
+
         var i = new Date();
         i.setDate(i.getDate() + 0);
         $(".datepicker1").datepicker("setDate", i);
@@ -35,6 +35,35 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
             initFunction();
         });
 
+
+        $scope.recalculate = function(){
+
+            $(".node").css('background','lightblue');
+            $(".node").css('width','80');
+            //$window.location.reload();
+            recalculate.get({STR_DATE:startDate, END_DATE:endDate, DEFECTS:$scope.defects, DETECTED_HOURS:$scope.detectedTime, SAP_LEVEL:$scope.sapactivitylevel},function(response){
+                //console.log(JSON.stringify(response.data.USER_INFROMATION));
+
+                if(response.data.USER_INFROMATION){
+                    angular.forEach(response.data.USER_INFROMATION,function(value, key){
+                        var flag = $("#node0"+value.UC_USER_ID);
+
+                        flag.css('background','#337AB7');
+                        flag.css('width','80');
+                    });
+                }
+                else{
+                    $.toaster("No Data Found", 'Alert', 'warning');
+                }
+
+
+            },function(){
+                $.toaster("Connaction Problem", 'Alert', 'danger');
+            });
+
+
+        }
+
         function initFunction() {
 
             $("#infovis").empty();
@@ -43,23 +72,23 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
 
             startDate = $("#startDate").val();
             endDate = $("#endDate").val();
-            
+
             //console.log("Start : "+startDate);
 
             var json = {
-                id: "node02",
+                id: "node00",
                 name: "john",
                 data: {},
                 children: [{
                     id: "node13",
                     name: "ABAP - SD",
-                    data: { href: "#bar"},
+                    data: { href: "#bar?STR_DATE="+startDate+"&END_DATE="+endDate+""},
                     children: [{
-                        id: "node24",
+                        id: "node01",
                         name: "MolineuxP",
                         data: { href: "#information?USER_NAME=MolineuxP&USER_ID=1&STR_DATE="+startDate+"&END_DATE="+endDate+""},
                     }, {
-                        id: "node222",
+                        id: "node02",
                         name: " PannettA",
                         data: { href: "#information?USER_NAME=PannettA&USER_ID=2&STR_DATE="+startDate+"&END_DATE="+endDate+""},
                         children: [{
@@ -77,9 +106,9 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                 }, {
                     id: "node125",
                     name: " ABAP - MM",
-                    data: { href: "#bar"},
+                    data: { href: "#bar?STR_DATE="+startDate+"&END_DATE="+endDate+""},
                     children: [{
-                        id: "node226",
+                        id: "node03",
                         name: " OscarM",
                         data: { href: "#information?USER_NAME=OscarM&USER_ID=3&STR_DATE="+startDate+"&END_DATE="+endDate+""},
                         children: [{
@@ -134,7 +163,7 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                             }]
                         }]
                     }, {
-                        id: "node237",
+                        id: "node04",
                         name: "julietteM",
                         data: { href: "#information?USER_NAME=julietteM&USER_ID=4&STR_DATE="+startDate+"&END_DATE="+endDate+""},
                         children: [{
@@ -239,7 +268,7 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                             }]
                         }]
                     }, {
-                        id: "node258",
+                        id: "node05",
                         name: "AugustM",
                         data: { href: "#information?USER_NAME=AugustM&USER_ID=5&STR_DATE="+startDate+"&END_DATE="+endDate+""},
                         children: [{
@@ -277,9 +306,9 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                 }, {
                     id: "node165",
                     name: "CRM",
-                    data: { href: "#bar"},
+                    data: { href: "#bar?STR_DATE="+startDate+"&END_DATE="+endDate+""},
                     children: [{
-                        id: "node266",
+                        id: "node06",
                         name: "MaxM",
                         data: { href: "#information?USER_NAME=MaxM&USER_ID=6&STR_DATE="+startDate+"&END_DATE="+endDate+""},
                         children: [{
@@ -364,7 +393,7 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                             }]
                         }]
                     }, {
-                        id: "node283",
+                        id: "node07",
                         name: " JamesM",
                         data: { href: "#information?USER_NAME=JamesM&USER_ID=7&STR_DATE="+startDate+"&END_DATE="+endDate+""},
                         children: [{
@@ -469,7 +498,7 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                             }]
                         }]
                     }, {
-                        id: "node2104",
+                        id: "node08",
                         name: " ChrisssyM",
                         data: { href: "#information?USER_NAME=ChrisssyM&USER_ID=8&STR_DATE="+startDate+"&END_DATE="+endDate+""},
                         children: [{
@@ -494,9 +523,9 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                             }]
                         }]
                     }, {
-                        id: "node2109",
-                        name: "Martin",
-                        data: { href: "#information?USER_NAME=Martin&USER_ID=9&STR_DATE="+startDate+"&END_DATE="+endDate+""},
+                        id: "node09",
+                        name: "Charlesm",
+                        data: { href: "#information?USER_NAME=Charlesm&USER_ID=9&STR_DATE="+startDate+"&END_DATE="+endDate+""},
                         children: [{
                             id: "node3110",
                             name: "3.110",
@@ -602,7 +631,7 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                 }, {
                     id: "node1130",
                     name: "SRM",
-                    data: { href: "#bar"},
+                    data: { href: "#bar?STR_DATE="+startDate+"&END_DATE="+endDate+""},
                     children: [{
                         id: "node2131",
                         name: " Clark",
@@ -713,8 +742,8 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                 //set overridable=true for styling individual
                 //nodes or edges
                 Node: {
-                    height: 40,
-                    width: 55,
+                    height: 25,
+                    width: 80,
                     type: 'rectangle',
                     color: '#1A82BF',
                     overridable: true
@@ -742,8 +771,9 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                     label.onclick = function () {
                         if (left.checked) {
                             //var pre = node.id.indexOf("e");
-                            var pre = node.id.substring(4, 5);
-                            if (pre > 1) {
+                            var pre = node.id.substring(4, 6);
+                            console.log("pre : "+pre);
+                            if (pre > 0) {
 
                                 window.location.href = node.data.href;
 
@@ -765,8 +795,6 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                     };
                     //set label styles
                     var style = label.style;
-                    style.width = 50 + 'px';
-                    style.height = 17 + 'px';
                     style.cursor = 'pointer';
                     style.color = 'white';
                     style.fontSize = '15px';
@@ -796,7 +824,7 @@ deskControllers.controller('spacetreeController', ['$scope', '$window', '$cookie
                             });
                             //assign a node color based on
                             //how many children it has
-                            node.data.$color = ['lightblue', '#337AB7', 'lightblue', 'lightblue', 'lightblue', 'lightblue'][count];
+                            node.data.$color = ['lightblue', 'lightblue', 'lightblue', 'lightblue', 'lightblue', 'lightblue'][count];
                         }
                     }
                 },

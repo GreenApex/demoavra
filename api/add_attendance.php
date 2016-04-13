@@ -12,8 +12,13 @@ $ATT_END_DATE = $_REQUEST['ATT_END_DATE'];
 $ATT_LB_DATE = $_REQUEST['ATT_LB_DATE'];
 $ATT_UI_DEVICE = $_REQUEST['ATT_UI_DEVICE'];
 $ATT_UI_BEACON = $_REQUEST['ATT_UI_BEACON'];
+$street_number = $_REQUEST['street_number'];
+$route = $_REQUEST['route'];
+$postal_code = $_REQUEST['postal_code'];
+$country = $_REQUEST['country'];
 
-if (!empty($ATT_USER_ID) && !empty($ATT_STR_DATE) && !empty($ATT_END_DATE) && !empty($ATT_LB_DATE) && !empty($ATT_UI_DEVICE) && !empty($ATT_UI_BEACON))
+if (!empty($ATT_USER_ID) && !empty($ATT_STR_DATE) && !empty($ATT_END_DATE) && !empty($ATT_LB_DATE) &&
+!empty($ATT_UI_DEVICE) && !empty($ATT_UI_BEACON))
 {
 
     $dteStart = new DateTime($ATT_STR_DATE);
@@ -26,7 +31,10 @@ if (!empty($ATT_USER_ID) && !empty($ATT_STR_DATE) && !empty($ATT_END_DATE) && !e
 
     $conn = getConnection();
 
-    $sql = "INSERT INTO ATTENDANCE (`ATT_USER_ID`,`ATT_STR_DATE`, `ATT_END_DATE`, `ATT_WORKING`, `ATT_LB_DATE`, `ATT_UI_DEVICE`, `ATT_UI_BEACON`) VALUES ('$ATT_USER_ID','$ATT_STR_DATE', '$ATT_END_DATE', '$ATT_WORKING', '$ATT_LB_DATE', '$ATT_UI_DEVICE', '$ATT_UI_BEACON')";
+    $sql = "INSERT INTO ATTENDANCE (`ATT_USER_ID`,`ATT_STR_DATE`, `ATT_END_DATE`, `ATT_WORKING`, `ATT_LB_DATE`,
+      `ATT_UI_DEVICE`, `ATT_UI_BEACON`, `street_number`, `route`, `postal_code`, `country`)
+      VALUES ('$ATT_USER_ID','$ATT_STR_DATE', '$ATT_END_DATE', '$ATT_WORKING', '$ATT_LB_DATE',
+        '$ATT_UI_DEVICE', '$ATT_UI_BEACON', '$street_number', '$route', '$postal_code', '$country')";
 
     if ($conn->query($sql) === TRUE)
     {
@@ -52,15 +60,15 @@ function jsonResponce($array = array())
 function getConnection()
 {
 
-  /*$servername = "localhost:3306";
+  $servername = "localhost:3306";
   $username = "root";
   $password = "root";
-  $dbname = "AvraQuality";*/
+  $dbname = "AvraQuality";
 
-  $servername = "localhost";
+  /*$servername = "localhost";
   $username = "dev_avra";
   $password = "green123$";
-  $dbname = "AvraQuality";
+  $dbname = "AvraQuality";*/
 
   $conn = new mysqli($servername, $username, $password, $dbname);
   if ($conn->connect_error)

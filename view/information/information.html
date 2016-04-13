@@ -41,7 +41,7 @@
                             <th>Start Date</th>
                             <th>End Date</th>
                             <th>Working Hours</th>
-                            <th>Beacon Description</th>
+                            <th>Location</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -96,6 +96,7 @@
         </div>
 
     </div>
+
     <div class="row">
         <div class="col-lg-12">
             <div class="panel panel-primary height">
@@ -110,9 +111,9 @@
                             <th>Detected Time</th>
                             <th>Time Difference</th>
                             <th>Reason for Difference</th>
-                            <th>Action</th>
+                            <!--<th>Action</th>-->
                             <th>Reaction Time</th>
-                            <th>Percentage Difference</th>
+                            <!--<th>Percentage Difference</th>-->
                         </tr>
                         </thead>
                         <tbody>
@@ -121,10 +122,10 @@
                             <td>{{userConfrom.UC_TIME_DELTA}}</td>
                             <td>{{userConfrom.UC_ATT_WORKING}}</td>
                             <td>{{userConfrom.UC_TIME_DIFF}}</td>
-                            <td>{{userConfrom.UC_DESCRIPTION}}</td>
+                            <!--<td>{{userConfrom.UC_DESCRIPTION}}</td>-->
                             <td>{{userConfrom.UC_ACTION}}</td>
                             <td>{{userConfrom.UC_REACTION_TIME}}</td>
-                            <td>{{userConfrom.UC_INCRESE}}</td>
+                            <!--<td>{{userConfrom.UC_INCRESE}}</td>-->
                         </tr>
                         <tr>
                             <td>{{msg}}</td>
@@ -135,4 +136,20 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center"><b>
+                    Message</b></div>
+                <div class="panel-body ">
+                  <div class="form-group">
+                        <textarea class="form-control" rows="5" name="message" placeholder="Message" ng-model="message"></textarea>
+                        <br>
+                        <input type="button" class="btn btn-primary pull-right"  value="Send" ng-click="gcmFunction()"/>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

@@ -2,91 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a527696-1511-4840-8496-f69f0a9c0cc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/codropsicons/codropsicons.eot" afterPath="$PROJECT_DIR$/assets/fonts/codropsicons/codropsicons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/codropsicons/codropsicons.ttf" afterPath="$PROJECT_DIR$/assets/fonts/codropsicons/codropsicons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/codropsicons/codropsicons.woff" afterPath="$PROJECT_DIR$/assets/fonts/codropsicons/codropsicons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/demoicons/minicons-webalys.eot" afterPath="$PROJECT_DIR$/assets/fonts/demoicons/minicons-webalys.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/demoicons/minicons-webalys.ttf" afterPath="$PROJECT_DIR$/assets/fonts/demoicons/minicons-webalys.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/demoicons/minicons-webalys.woff" afterPath="$PROJECT_DIR$/assets/fonts/demoicons/minicons-webalys.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/segoeui-webfont.eot" afterPath="$PROJECT_DIR$/assets/fonts/segoeui-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/segoeui-webfont.ttf" afterPath="$PROJECT_DIR$/assets/fonts/segoeui-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/segoeui-webfont.woff" afterPath="$PROJECT_DIR$/assets/fonts/segoeui-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/segoeui-webfontd41d.eot" afterPath="$PROJECT_DIR$/assets/fonts/segoeui-webfontd41d.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/segoeuib-webfont.eot" afterPath="$PROJECT_DIR$/assets/fonts/segoeuib-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/segoeuib-webfont.ttf" afterPath="$PROJECT_DIR$/assets/fonts/segoeuib-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/segoeuib-webfont.woff" afterPath="$PROJECT_DIR$/assets/fonts/segoeuib-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/segoeuib-webfontd41d.eot" afterPath="$PROJECT_DIR$/assets/fonts/segoeuib-webfontd41d.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/bg.jpg" afterPath="$PROJECT_DIR$/assets/images/bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/bg1.jpg" afterPath="$PROJECT_DIR$/assets/images/bg1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/bg2.jpg" afterPath="$PROJECT_DIR$/assets/images/bg2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/bg3.jpg" afterPath="$PROJECT_DIR$/assets/images/bg3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/logo.png" afterPath="$PROJECT_DIR$/assets/images/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/angular-animate.min.js" afterPath="$PROJECT_DIR$/angularLib/angular-animate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/angular-cookies.min.js" afterPath="$PROJECT_DIR$/angularLib/angular-cookies.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/angular-drag-and-drop-lists.js" afterPath="$PROJECT_DIR$/angularLib/angular-drag-and-drop-lists.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/angular-drag-and-drop-lists.min.js" afterPath="$PROJECT_DIR$/angularLib/angular-drag-and-drop-lists.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/angular-flexslider.js" afterPath="$PROJECT_DIR$/angularLib/angular-flexslider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/angular-resource.min.js" afterPath="$PROJECT_DIR$/angularLib/angular-resource.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/angular-route.min.js" afterPath="$PROJECT_DIR$/angularLib/angular-route.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/angular.min.js" afterPath="$PROJECT_DIR$/angularLib/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/mainController.js" afterPath="$PROJECT_DIR$/angularLib/mainController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/mainDirective.js" afterPath="$PROJECT_DIR$/angularLib/mainDirective.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/team_performance.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/bar/barController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/mainService.js" afterPath="$PROJECT_DIR$/angularLib/mainService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/ng-file-upload-shim.js" afterPath="$PROJECT_DIR$/angularLib/ng-file-upload-shim.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/ng-file-upload.js" afterPath="$PROJECT_DIR$/angularLib/ng-file-upload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/ng-infinite-scroll.min.js" afterPath="$PROJECT_DIR$/angularLib/ng-infinite-scroll.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularLib/ui-bootstrap-tpls-0.14.3.min.js" afterPath="$PROJECT_DIR$/angularLib/ui-bootstrap-tpls-0.14.3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/add_attendance..php" afterPath="$PROJECT_DIR$/api/add_attendance..php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/checklogin.php" afterPath="$PROJECT_DIR$/api/checklogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/get_information.php" afterPath="$PROJECT_DIR$/api/get_information.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/index.html" afterPath="$PROJECT_DIR$/api/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/base.css" afterPath="$PROJECT_DIR$/assets/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/bootstrap-datepicker.min.css" afterPath="$PROJECT_DIR$/assets/css/bootstrap-datepicker.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/calender.css" afterPath="$PROJECT_DIR$/assets/css/calender.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/calender_ui.css" afterPath="$PROJECT_DIR$/assets/css/calender_ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/assets/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/loader.css" afterPath="$PROJECT_DIR$/assets/css/loader.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/spacetree.css" afterPath="$PROJECT_DIR$/assets/css/spacetree.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/codropsicons/codropsicons.svg" afterPath="$PROJECT_DIR$/assets/fonts/codropsicons/codropsicons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/codropsicons/license.txt" afterPath="$PROJECT_DIR$/assets/fonts/codropsicons/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/demoicons/license.txt" afterPath="$PROJECT_DIR$/assets/fonts/demoicons/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/demoicons/minicons-webalys.svg" afterPath="$PROJECT_DIR$/assets/fonts/demoicons/minicons-webalys.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/segoeui-webfont.svg" afterPath="$PROJECT_DIR$/assets/fonts/segoeui-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/segoeuib-webfont.svg" afterPath="$PROJECT_DIR$/assets/fonts/segoeuib-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/1.8.2.js" afterPath="$PROJECT_DIR$/assets/js/1.8.2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/bootstrap-datepicker.min.js" afterPath="$PROJECT_DIR$/assets/js/bootstrap-datepicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/assets/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/excanvas.js" afterPath="$PROJECT_DIR$/assets/js/excanvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/exporting.js" afterPath="$PROJECT_DIR$/assets/js/exporting.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/highcharts.js" afterPath="$PROJECT_DIR$/assets/js/highcharts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/jit.js" afterPath="$PROJECT_DIR$/assets/js/jit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/jquery-1.11.1.min.js" afterPath="$PROJECT_DIR$/assets/js/jquery-1.11.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/jquery.toaster.js" afterPath="$PROJECT_DIR$/assets/js/jquery.toaster.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/npm.js" afterPath="$PROJECT_DIR$/assets/js/npm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/spacetree.js" afterPath="$PROJECT_DIR$/assets/js/spacetree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/bar/bar.html" afterPath="$PROJECT_DIR$/view/bar/bar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/home/home.html" afterPath="$PROJECT_DIR$/view/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/home/homeController.js" afterPath="$PROJECT_DIR$/view/home/homeController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Recalculate.php" afterPath="$PROJECT_DIR$/api/Recalculate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/add_attendance.php" afterPath="$PROJECT_DIR$/api/add_attendance.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/get_user_confirmation.php" afterPath="$PROJECT_DIR$/api/get_user_confirmation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/information/information.html" afterPath="$PROJECT_DIR$/view/information/information.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/information/informationController.js" afterPath="$PROJECT_DIR$/view/information/informationController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/layout/footer.html" afterPath="$PROJECT_DIR$/view/layout/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/layout/header.html" afterPath="$PROJECT_DIR$/view/layout/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/spacetree/spacetree.html" afterPath="$PROJECT_DIR$/view/spacetree/spacetree.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/spacetree/spacetreeController.js" afterPath="$PROJECT_DIR$/view/spacetree/spacetreeController.js" />
     </list>
@@ -109,11 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="informationController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/information/informationController.js">
+      <file leaf-file-name="bar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/bar/bar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            <state relative-caret-position="15">
+              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_user_confirmation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/get_user_confirmation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -122,34 +55,88 @@
       <file leaf-file-name="mainService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angularLib/mainService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="435">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spacetree.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/spacetree.js">
+      <file leaf-file-name="team_performance.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/team_performance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="23" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="157" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="information.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/information/information.html">
+      <file leaf-file-name="team_performance_smit.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/team_performance_smit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="57" column="67" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="67" />
+            <state relative-caret-position="585">
+              <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recalculate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Recalculate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="126" column="37" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_information.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/get_information.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1275">
+              <caret line="166" column="6" selection-start-line="166" selection-start-column="6" selection-end-line="166" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spacetree.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/spacetree/spacetree.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="915">
+              <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#2;n#table#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#h4#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spacetreeController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/spacetree/spacetreeController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" column="41" selection-start-line="40" selection-start-column="11" selection-end-line="41" selection-end-column="41" />
+              <folding>
+                <element signature="e#2400#29770#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -157,9 +144,24 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/get_information.php" />
         <option value="$PROJECT_DIR$/view/home/homeController.js" />
+        <option value="$PROJECT_DIR$/assets/js/spacetree.js" />
+        <option value="$PROJECT_DIR$/angularLib/forceLayoutDirective.js" />
+        <option value="$PROJECT_DIR$/angularLib/spacetreeDirective.js" />
+        <option value="$PROJECT_DIR$/api/get_information.php" />
         <option value="$PROJECT_DIR$/view/information/informationController.js" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/view/information/information.html" />
+        <option value="$PROJECT_DIR$/view/spacetree/spacetree.html" />
+        <option value="$PROJECT_DIR$/angularLib/mainService.js" />
+        <option value="$PROJECT_DIR$/api/get_user_confirmation.php" />
+        <option value="$PROJECT_DIR$/view/spacetree/spacetreeController.js" />
+        <option value="$PROJECT_DIR$/api/add_attendance.php" />
+        <option value="$PROJECT_DIR$/view/bar/barController.js" />
+        <option value="$PROJECT_DIR$/api/team_performance.php" />
+        <option value="$PROJECT_DIR$/api/Recalculate.php" />
+        <option value="$PROJECT_DIR$/api/team_performance_smit.php" />
       </list>
     </option>
   </component>
@@ -248,6 +250,10 @@
               <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -277,11 +283,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demoavra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demoavra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,6 +320,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demoavra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demoavra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,16 +353,86 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Google Maps D3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LogTrackerManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
+      <recent name="$PROJECT_DIR$/angularLib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.spacetree.html">
+    <configuration default="false" name="spacetree.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demoavra/view/spacetree/spacetree.html">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.spacetree.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.spacetree.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -343,24 +451,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="24" width="1319" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24943139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -382,11 +490,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/view/information/information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/information/informationController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="420">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -394,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -402,185 +515,318 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/add_attendance..php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/checklogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/get_information.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/add_attendance..php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/checklogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/get_information.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/add_attendance..php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/checklogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/get_information.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/add_attendance..php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/checklogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/get_information.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/add_attendance..php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/checklogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/get_information.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/spacetree/spacetreeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/home/homeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angularLib/mainService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/spacetree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/information/information.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="57" column="67" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="67" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/information/informationController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularLib/mainService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/spacetree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/information/information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="67" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/information/informationController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularLib/mainService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/spacetree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/add_attendance..php" />
+    <entry file="file://$PROJECT_DIR$/api/checklogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/get_information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/add_attendance..php" />
+    <entry file="file://$PROJECT_DIR$/api/checklogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/get_information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/add_attendance..php" />
+    <entry file="file://$PROJECT_DIR$/api/checklogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/get_information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/add_attendance..php" />
+    <entry file="file://$PROJECT_DIR$/api/checklogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/get_information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/add_attendance..php" />
+    <entry file="file://$PROJECT_DIR$/api/checklogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularLib/spacetreeDirective.js" />
+    <entry file="file://$PROJECT_DIR$/assets/js/spacetree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="674" column="33" selection-start-line="674" selection-start-column="33" selection-end-line="674" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/home/homeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="144" column="17" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/information/information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/information/informationController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularLib/mainService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/spacetree/spacetree.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#2;n#table#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#h4#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/spacetree/spacetreeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="41" selection-start-line="40" selection-start-column="11" selection-end-line="41" selection-end-column="41" />
+          <folding>
+            <element signature="e#2400#29770#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/User_Confirmation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularLib/mainController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/bar/barController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/bar/bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/add_attendance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/get_information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="166" column="6" selection-start-line="166" selection-start-column="6" selection-end-line="166" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/get_user_confirmation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/team_performance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="157" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Recalculate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="126" column="37" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/team_performance_smit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
           <folding />
         </state>
       </provider>
