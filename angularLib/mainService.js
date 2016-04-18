@@ -37,7 +37,7 @@ deskServices.factory('teamperfrom',['$resource','webAppConstant',
 
 deskServices.factory('gcmgetid',['$resource','webAppConstant',
     function($resource,webAppConstant){
-              return $resource(webAppConstant + 'sendgcm.php', {gcm_id:'@gcm_id',message:'@message'}, {
+              return $resource(webAppConstant + 'sendgcm.php', {gcm_id:'@gcm_id',message:'@message',time:'@time'}, {
                         query: { method: "POST"}
                     });
                 }]);

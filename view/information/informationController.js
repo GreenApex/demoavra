@@ -66,13 +66,14 @@ deskControllers.controller('informationController', ['$scope', '$window', '$cook
             });
 //-----------------------------------------------------------------------------function
         $scope.gcmFunction = function(){
-
+            console.log(JSON.stringify($scope.select));
             console.log("GCM : "+JSON.stringify(gcmid));
             //alert(gcmid);
             gcmgetid.save(
             {
                     gcm_id:gcmid || "no GCM",
-                    message:$scope.message || "no message"
+                    message:$scope.message || "no message",
+                    time: $scope.select || "not select"
             }, function (response) {
                 $scope.message = "";
                   //alert(gcmid);

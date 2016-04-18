@@ -21,7 +21,7 @@ header('Access-Control-Allow-Headers: Content-Type');
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt ($ch, CURLOPT_SSL_VERIFYHOST, 0);
+		    curl_setopt ($ch, CURLOPT_SSL_VERIFYHOST, 0);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields));
         $result = curl_exec($ch);
@@ -36,18 +36,24 @@ header('Access-Control-Allow-Headers: Content-Type');
 
 	$GCM_ID = $_REQUEST['gcm_id'];
 	$message = $_REQUEST['message'];
+  $time = $_REQUEST['time'];
+  $pushStatus = "";
+  if($time == "not select"){
+    $gcmRegID=$GCM_ID;
+		$pushMessage = $time. ':' .$message;
+  }
+  else{
+    $gcmRegID=$GCM_ID;
+		$pushMessage = "kron". ':' .$message;
+  }
 	//this block is to post message to GCM on-click
-	$pushStatus = "";
-	//if(!empty($_GET["push"])) {
-		//$gcmRegID  = file_get_contents("GCMRegId.txt");
-		$gcmRegID=$GCM_ID;
-		$pushMessage = $message;
+
 		if (isset($gcmRegID) && isset($pushMessage)) {
 			$gcmRegIds = array($gcmRegID);
 			$message = array("message" => $pushMessage);
 			$pushStatus = sendPushNotificationToGCM($gcmRegIds, $message);
 		}
-	//}
+
 
 	//this block is to receive the GCM regId from external (mobile apps)
 	//if(!empty($_GET["shareRegId"])) {
