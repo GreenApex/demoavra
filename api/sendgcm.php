@@ -38,43 +38,25 @@ header('Access-Control-Allow-Headers: Content-Type');
 	$message = $_REQUEST['message'];
   $time = $_REQUEST['time'];
   $pushStatus = "";
-  if($time == "not select"){
+  if($time == "Time" ){
     $gcmRegID=$GCM_ID;
 		$pushMessage = $time. ':' .$message;
+    //echo $pushMessage;
   }
-  else{
+  else if($time == "Remote Work"){
     $gcmRegID=$GCM_ID;
 		$pushMessage = "kron". ':' .$message;
+    //echo $pushMessage;
   }
+  else {
+                  $gcmRegID=$GCM_ID;
+  		$pushMessage = $message;
+  	}
 	//this block is to post message to GCM on-click
-
 		if (isset($gcmRegID) && isset($pushMessage)) {
 			$gcmRegIds = array($gcmRegID);
 			$message = array("message" => $pushMessage);
 			$pushStatus = sendPushNotificationToGCM($gcmRegIds, $message);
 		}
 
-
-	//this block is to receive the GCM regId from external (mobile apps)
-	//if(!empty($_GET["shareRegId"])) {
-	//	$gcmRegID  = $_POST["regId"];
-//	file_put_contents("GCMRegId.txt",$gcmRegID);
-	//echo "Ok!";
-	//exit;
-	//}
 ?>
-<html>
-    <head>
-        <title>Google Cloud Messaging (GCM) Server in PHP</title>
-    </head>
-	<body>
-		<h1>Google Cloud Messaging (GCM) Server in PHP</h1>
-		<form method="post" action="gcm.php/?push=1">
-			<div>
-				<textarea rows="2" name="message" cols="23" placeholder="Message to transmit via GCM"></textarea>
-			</div>
-			<div><input type="submit"  value="Send Push Notification via GCM" /></div>
-		</form>
-		<p><h3><?php echo $pushStatus; ?></h3></p>
-    </body>
-</html>

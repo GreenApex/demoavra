@@ -64,7 +64,7 @@
         <div class="col-lg-12">
             <div class="panel panel-primary height">
                 <div class="panel-heading text-center"><b>
-                    SAP ACTIVITY</b></div>
+                    TECHNICAL ACTIVITY</b></div>
                 <div class="panel-body">
                     <table class="table table-striped table-responsive">
                         <thead>
@@ -150,7 +150,10 @@
                         <select ng-model="select">
                           <option value="Time">Time</option>
                           <option value="Remote Work">Remote Work</option>
-                        </section>
+                        </select>
+                          <select ng-model="select" ng-options="data for data in selectTime">
+                        </select>
+                        </select>
                         <br>
                         <input type="button" class="btn btn-primary pull-right"  value="Send" ng-click="gcmFunction()"/>
                   </div>
